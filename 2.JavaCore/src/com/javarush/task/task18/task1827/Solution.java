@@ -1,6 +1,6 @@
 package com.javarush.task.task18.task1827;
 
-import org.apache.commons.io.input.ReversedLinesFileReader;
+// import org.apache.commons.io.input.ReversedLinesFileReader;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -17,7 +17,7 @@ public class Solution {
             Scanner scanner = new Scanner(System.in);
             String fileName = scanner.nextLine();
             scanner.close();
-            try (ReversedLinesFileReader reader = new ReversedLinesFileReader(new File(fileName));
+            /*try (ReversedLinesFileReader reader = new ReversedLinesFileReader(new File(fileName));
                  BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, true))) {
 
                 String lastStringForId = reader.readLine();
@@ -33,7 +33,7 @@ public class Solution {
                 String newQuantity = args[args.length - 1];
                 writer.write(String.format("\n%-8d%-30.30s%-8.8s%-4.4s", newID, newName, newPrice, newQuantity));
 
-            }
+            }*/
         }
     }
 }
